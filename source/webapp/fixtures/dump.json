@@ -1,0 +1,74 @@
+[
+{
+  "model": "webapp.guest",
+  "pk": 1,
+  "fields": {
+    "guest_name": "John Johnson",
+    "guest_mail": "johnson21@gmail.com",
+    "guest_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum porttitor commodo laoreet. Nulla magna nibh, luctus non dictum sit amet, tincidunt eget odio. Nam vel tempus tortor.",
+    "created_at": "2022-01-08T06:41:10.849Z",
+    "updated_at": "2022-01-08T06:41:10.849Z",
+    "status": "active"
+  }
+},
+{
+  "model": "webapp.guest",
+  "pk": 2,
+  "fields": {
+    "guest_name": "Harry Potter",
+    "guest_mail": "harry1989@mil.ru",
+    "guest_text": "Mauris nec risus bibendum, iaculis purus eleifend, dictum enim. Nunc ac ex massa. Donec tincidunt nulla ut elit viverra, ac hendrerit quam porta.",
+    "created_at": "2022-01-08T06:48:22.010Z",
+    "updated_at": "2022-01-08T06:48:22.010Z",
+    "status": "active"
+  }
+},
+{
+  "model": "webapp.guest",
+  "pk": 3,
+  "fields": {
+    "guest_name": "Angelina Jolie",
+    "guest_mail": "angelinajolie@gmail.com",
+    "guest_text": "Curabitur ligula sapien, tincidunt at elementum quis, ullamcorper sed arcu. Sed nec orci dolor. Etiam eu lacus ac purus bibendum gravida aliquet et nisl. Proin quam nunc, ullamcorper at sollicitudin sit amet, egestas et justo.",
+    "created_at": "2022-01-08T06:48:38.500Z",
+    "updated_at": "2022-01-08T06:48:38.500Z",
+    "status": "active"
+  }
+},
+{
+  "model": "webapp.guest",
+  "pk": 4,
+  "fields": {
+    "guest_name": "John Doe",
+    "guest_mail": "john_doe@example.com",
+    "guest_text": "Morbi sit amet purus purus. Sed scelerisque tempus auctor. Quisque accumsan ornare augue a varius. Aenean eget sollicitudin quam, nec euismod orci. Integer euismod vestibulum elit vitae ullamcorper.",
+    "created_at": "2022-01-08T06:48:55.967Z",
+    "updated_at": "2022-01-08T06:48:55.967Z",
+    "status": "active"
+  }
+},
+{
+  "model": "webapp.guest",
+  "pk": 5,
+  "fields": {
+    "guest_name": "Vasilii Pupkin",
+    "guest_mail": "vasya@gmail.com",
+    "guest_text": "Nulla sollicitudin, odio consequat lobortis elementum, dui mauris eleifend sem, in lacinia augue risus sed nunc. Nulla pulvinar lacus at lacus lobortis commodo. Quisque sed semper nibh, et aliquam justo. Aliquam non quam eget massa placerat mattis.",
+    "created_at": "2022-01-08T06:49:13.669Z",
+    "updated_at": "2022-01-08T06:49:13.669Z",
+    "status": "active"
+  }
+},
+{
+  "model": "webapp.guest",
+  "pk": 6,
+  "fields": {
+    "guest_name": "Alexandra Rassokhina",
+    "guest_mail": "alexalex@mail.ru",
+    "guest_text": "Etiam fringilla tempus porta. Cras vitae fringilla enim, vitae dapibus mi. Integer condimentum est vel varius sagittis.",
+    "created_at": "2022-01-08T06:49:30.284Z",
+    "updated_at": "2022-01-08T06:49:30.284Z",
+    "status": "blocked"
+  }
+}
+]
