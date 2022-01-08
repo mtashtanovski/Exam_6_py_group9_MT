@@ -30,3 +30,12 @@ def update_note(request, pk):
         guest.guest_text = request.POST.get('guest_text')
         guest.save()
         return redirect('index')
+
+
+def delete_note(request, pk):
+    guest = get_object_or_404(Guest, pk=pk)
+    if request.method == "GET":
+        return render(request, 'delete_note.html', {'guest': guest})
+    else:
+        guest.delete()
+        return redirect('index')

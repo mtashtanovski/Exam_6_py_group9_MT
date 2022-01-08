@@ -2,11 +2,13 @@ from django.urls import path
 
 from webapp.views import (index_view,
                           add_note,
-                          update_note
+                          update_note,
+                          delete_note
                           )
 
 urlpatterns = [
     path('', index_view, name="index"),
     path('note/add/', add_note, name='add_note'),
-    path('note/<int:pk>/update/', update_note, name='update_note')
+    path('note/<int:pk>/update/', update_note, name='update_note'),
+    path('note/<int:pk>/delete/', delete_note, name='delete_note')
 ]
