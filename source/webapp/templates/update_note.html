@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %} Create article {% endblock %}
+{% block nav %}{% endblock %}
+{% block content %}
+
+    <div class="container">
+        <h1>Add new guest note</h1>
+    </div>
+
+    <div class="container">
+        <form class="row g-3" method="post">
+            {% include 'partials/form.html' with button_txt="Update" %}
+        </form>
+    </div>
+
+{% endblock %}
