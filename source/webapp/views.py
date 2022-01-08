@@ -7,3 +7,14 @@ from webapp.models import Guest, STATUS_CHOICES
 def index_view(request):
     guests = Guest.objects.order_by('-created_at')
     return render(request, 'index.html', {'guests': guests})
+
+
+def add_note(request, ):
+    if request.method == 'GET':
+        return render(request, 'add_note.html', {"status_choices": STATUS_CHOICES})
+    else:
+        guest_name = request.POST.get('guest_name')
+        guest_mail = request.POST.get('guest_mail')
+        guest_text = request.POST.get('guest_text')
+        new_note = Guest.objects.create(guest_name=guest_name, guest_mail=guest_mail, guest_text=guest_text)
+        return redirect('index')

@@ -1,0 +1,20 @@
+{% csrf_token %}
+
+<div class="col-md-8">
+    <label for="guest_name" class="form-label">Guest name:</label>
+    <input type="text" name="guest_name" id="task_name" class="form-control" required value="{{ guest.guest_name }}"/>
+</div>
+
+<div class="col-md-8">
+    <label for="guest_mail" class="form-label">Guest E-mail:</label>
+    <input type="text" name="guest_mail" id="guest_mail" class="form-control" required value="{{ guest.guest_mail }}"/>
+</div>
+
+<div class="col-md-8">
+    <label for="guest_text" class="form-label">Guest text:</label>
+    <textarea name="guest_text" class="form-control" id="guest_text" required>{{ guest.guest.txt }}</textarea>
+</div>
+
+<div class="col-12">
+    <button type="submit" class="btn btn-primary btn-lg">{{ button_txt }}</button>
+</div>
