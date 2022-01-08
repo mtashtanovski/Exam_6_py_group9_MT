@@ -1,20 +1,35 @@
+{#{% csrf_token %}#}
+{##}
+{#<div class="col-md-8">#}
+{#    <label for="guest_name" class="form-label">Guest name:</label>#}
+{#    <input type="text" name="guest_name" id="guest_name" class="form-control" value="{{ guest.guest_name }}" required />#}
+{#</div>#}
+{##}
+{#<div class="col-md-8">#}
+{#    <label for="guest_mail" class="form-label">Guest E-mail:</label>#}
+{#    <input type="text" name="guest_mail" id="guest_mail" class="form-control" value="{{ guest.guest_mail }}" required />#}
+{#</div>#}
+{##}
+{#<div class="col-md-8">#}
+{#    <label for="guest_text" class="form-label">Guest note:</label>#}
+{#    <textarea name="guest_text" class="form-control" id="guest_text" rows="7" required>{{ guest.guest_text }}</textarea>#}
+{#</div>#}
+{##}
+
+
 {% csrf_token %}
 
-<div class="col-md-8">
-    <label for="guest_name" class="form-label">Guest name:</label>
-    <input type="text" name="guest_name" id="guest_name" class="form-control" value="{{ guest.guest_name }}" required />
-</div>
+{% for error in form.non_field_errors %}
+   <p class="text-danger">{{ error }}</p>
+{% endfor %}
 
-<div class="col-md-8">
-    <label for="guest_mail" class="form-label">Guest E-mail:</label>
-    <input type="text" name="guest_mail" id="guest_mail" class="form-control" value="{{ guest.guest_mail }}" required />
-</div>
-
-<div class="col-md-8">
-    <label for="guest_text" class="form-label">Guest text:</label>
-    <textarea name="guest_text" class="form-control" id="guest_text" rows="7" required>{{ guest.guest_text }}</textarea>
-</div>
-
+{% for field in form %}
+    <p><label for="{{ field.id_for_label }}">{{ field.label }}</label></p>
+    {% for error in field.errors %}
+        <p class="text-danger">{{ error }}</p>
+    {% endfor %}
+    {{ field }}
+{% endfor %}
 <div class="col-12">
     <button type="submit" class="btn btn-primary btn-lg">{{ button_txt }}</button>
 </div>
